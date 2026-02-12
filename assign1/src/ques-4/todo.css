@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+.todo-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+.todo-card {
+  background: #ffffff;
+  width: 70vw;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-style {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.input-style:focus {
+  border-color: #2563eb;
+}
+
+/* ✅ Compact button with reset */
+.btn {
+  min-width: 50px;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background: #f9fafb;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
